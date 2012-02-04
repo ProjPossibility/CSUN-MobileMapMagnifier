@@ -1,0 +1,9 @@
+C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll
+C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.pdb
+C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
+C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb

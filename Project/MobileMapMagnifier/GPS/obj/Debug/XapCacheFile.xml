@@ -1,0 +1,64 @@
+﻿<xapCache source="C:\Users\Chris\Desktop\map-magnifier\GPS\Bin\Debug\MapMagnifier.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2/4/2012 12:13:49 PM">
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2/4/2012 11:35:53 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\App Hub\tile.png" archivePath="App Hub\tile.png" lastWriteTime="2/4/2012 11:06:51 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\compass.png" archivePath="Images\compass.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\obj\Debug\GPS.dll" archivePath="GPS.dll" lastWriteTime="2/4/2012 12:13:46 PM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Extensions\Coding4Fun.Phone.Controls.dll" archivePath="Coding4Fun.Phone.Controls.dll" lastWriteTime="2/4/2012 11:06:53 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Extensions\Coding4Fun.Phone.Controls.Toolkit.dll" archivePath="Coding4Fun.Phone.Controls.Toolkit.dll" lastWriteTime="2/4/2012 11:06:53 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Advertising for Phone\Libraries\Microsoft.Advertising.Mobile.UI.dll" archivePath="Microsoft.Advertising.Mobile.UI.dll" lastWriteTime="8/19/2011 12:13:14 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="9/15/2011 4:36:26 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.Maps.dll" archivePath="Microsoft.Phone.Controls.Maps.dll" lastWriteTime="9/15/2011 4:36:26 PM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Toolkit\Oct11\Bin\Microsoft.Phone.Controls.Toolkit.dll" archivePath="Microsoft.Phone.Controls.Toolkit.dll" lastWriteTime="10/6/2011 12:33:14 PM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll" archivePath="ScheduledTaskAgent1.dll" lastWriteTime="2/4/2012 11:35:48 AM" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Advertising for Phone\Libraries\Microsoft.Advertising.Mobile.dll" archivePath="Microsoft.Advertising.Mobile.dll" lastWriteTime="8/19/2011 12:13:14 PM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Extensions\Coding4Fun.Phone.Controls.dll" archivePath="Extensions\Coding4Fun.Phone.Controls.dll" lastWriteTime="2/4/2012 11:06:53 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Extensions\Coding4Fun.Phone.Controls.Toolkit.dll" archivePath="Extensions\Coding4Fun.Phone.Controls.Toolkit.dll" lastWriteTime="2/4/2012 11:06:53 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\037241-black-white-pearl-icon-transport-travel-compass4.png" archivePath="Images\037241-black-white-pearl-icon-transport-travel-compass4.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\037278-black-white-pearl-icon-transport-travel-transportation-car1.png" archivePath="Images\037278-black-white-pearl-icon-transport-travel-transportation-car1.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Add.png" archivePath="Images\Add.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\At.png" archivePath="Images\At.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Location_Dark.png" archivePath="Images\Location_Dark.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Mode_Dark.png" archivePath="Images\Mode_Dark.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\PushpinCar_Dark.png" archivePath="Images\PushpinCar_Dark.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\SendText.png" archivePath="Images\SendText.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\SendMessage.png" archivePath="Images\SendMessage.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Cancel.png" archivePath="Images\Cancel.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Check.png" archivePath="Images\Check.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Delete.png" archivePath="Images\Delete.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Edit.png" archivePath="Images\Edit.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Addto.png" archivePath="Images\Addto.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Favorites.png" archivePath="Images\Favorites.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Settings.png" archivePath="Images\Settings.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Refresh.png" archivePath="Images\Refresh.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Save.png" archivePath="Images\Save.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Email.png" archivePath="Images\Email.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Resource\alarm.wav" archivePath="Resource\alarm.wav" lastWriteTime="2/4/2012 11:06:52 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Resource\click.wav" archivePath="Resource\click.wav" lastWriteTime="2/4/2012 11:06:52 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="2/4/2012 11:06:58 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2/4/2012 11:06:53 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Background.png" archivePath="Background.png" lastWriteTime="2/4/2012 11:06:52 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Directions.png" archivePath="Images\Directions.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Location.png" archivePath="Images\Location.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Mode.png" archivePath="Images\Mode.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\Route.png" archivePath="Images\Route.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\SearchBlack.png" archivePath="Images\SearchBlack.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\SearchWhite.png" archivePath="Images\SearchWhite.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\PushpinBicycle.png" archivePath="Images\PushpinBicycle.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\PushpinCar.png" archivePath="Images\PushpinCar.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\PushpinDrink.png" archivePath="Images\PushpinDrink.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\PushpinFuel.png" archivePath="Images\PushpinFuel.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\PushpinHouse.png" archivePath="Images\PushpinHouse.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\PushpinLocation.png" archivePath="Images\PushpinLocation.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\PushpinRestaurant.png" archivePath="Images\PushpinRestaurant.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\PushpinShop.png" archivePath="Images\PushpinShop.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\startstop.png" archivePath="Images\startstop.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\test.png" archivePath="Images\test.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\ZoomIn_Black.png" archivePath="Images\ZoomIn_Black.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\ZoomIn_White.png" archivePath="Images\ZoomIn_White.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\ZoomOut_Black.png" archivePath="Images\ZoomOut_Black.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Images\ZoomOut_White.png" archivePath="Images\ZoomOut_White.png" lastWriteTime="2/4/2012 11:06:57 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="2/4/2012 11:06:58 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2/4/2012 11:35:53 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2/4/2012 11:06:53 AM" />
+  <file source="C:\Users\Chris\Desktop\map-magnifier\GPS\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="2/4/2012 11:06:52 AM" />
+</xapCache>

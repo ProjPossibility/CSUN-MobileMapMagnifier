@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E83D2793-351A-45BF-B434-F3FA17305E8B}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UsingBingMaps</RootNamespace>
+    <AssemblyName>GPS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>MapMagnifier.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>GPS.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Phone.Controls, Version=1.4.8.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Coding4Fun.Phone.Controls.Toolkit, Version=1.4.8.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Advertising.Mobile.UI, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Maps, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="mscorlib.Extensions" />
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Car_Direction.xaml.cs">
+      <DependentUpon>Car_Direction.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Context.cs" />
+    <Compile Include="DB_Helper.cs" />
+    <Compile Include="Directions\ItineraryItemDisplay.cs" />
+    <Compile Include="Directions\ItineraryItemExtensions.cs" />
+    <Compile Include="Helpers\RouteCalculationError.cs" />
+    <Compile Include="Helpers\RouteCalculator.cs" />
+    <Compile Include="Helpers\RoutingState.cs" />
+    <Compile Include="Converters.cs" />
+    <Compile Include="HelpPage.xaml.cs">
+      <DependentUpon>HelpPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocationExtensions.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Map\GeocodeError.cs" />
+    <Compile Include="Models\RouteModel.cs" />
+    <Compile Include="New.xaml.cs">
+      <DependentUpon>New.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Bing.Geocode\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Bing.Route\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Bing.Search\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Share.xaml.cs">
+      <DependentUpon>Share.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StorageManager.cs" />
+    <Compile Include="ViewModels\ItemViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Car_Direction.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HelpPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="New.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Share.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App Hub\Background.psd" />
+    <None Include="App Hub\modern-compass-icon-psd.psd" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\DataSources\App.datasource" />
+    <None Include="Properties\DataSources\DB_Helper.datasource" />
+    <None Include="Properties\DataSources\MainPage.datasource" />
+    <None Include="Properties\DataSources\New_CarLocator.datasource" />
+    <None Include="Properties\DataSources\Row.datasource" />
+    <None Include="Properties\DataSources\Row.GPSDataContext.datasource" />
+    <None Include="Properties\DataSources\StorageManager.datasource" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Geocode\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Geocode\common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Geocode\contracts.wsdl" />
+    <None Include="Service References\Bing.Geocode\contracts.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Geocode\geocode.wsdl" />
+    <None Include="Service References\Bing.Geocode\geocode.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Geocode\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Geocode\UsingBingMaps.Bing.Geocode.GeocodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Bing.Route\configuration91.svcinfo" />
+    <None Include="Service References\Bing.Route\configuration.svcinfo" />
+    <None Include="Service References\Bing.Route\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Bing.Route\UsingBingMaps.Bing.Route.MajorRoutesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Bing.Route\UsingBingMaps.Bing.Route.RouteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Bing.Search\configuration91.svcinfo" />
+    <None Include="Service References\Bing.Search\configuration.svcinfo" />
+    <None Include="Service References\Bing.Search\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="App Hub\Device application icon  Small.png" />
+    <None Include="App Hub\Device application icon Large.png" />
+    <None Include="App Hub\Device application icon XSmall.png" />
+    <None Include="App Hub\Device application icon.png" />
+    <None Include="App Hub\Screen Shots\gps_screenshot_000.png" />
+    <None Include="App Hub\Screen Shots\gps_screenshot_001.png" />
+    <None Include="App Hub\Screen Shots\gps_screenshot_002.png" />
+    <None Include="App Hub\Screen Shots\gps_screenshot_004.png" />
+    <None Include="App Hub\Screen Shots\gps_screenshot_005.png" />
+    <None Include="App Hub\Screen Shots\gps_screenshot_006.png" />
+    <None Include="App Hub\Screen Shots\gps_screenshot_007.png" />
+    <None Include="App Hub\Screen Shots\gps_screenshot_008.png" />
+    <None Include="App Hub\BackgroundArt.png" />
+    <None Include="App Hub\tile.png" />
+    <None Include="App Hub\tile_icon small.png" />
+    <None Include="App Hub\Screen Shots\alarm.png" />
+    <None Include="App Hub\Screen Shots\alert.png" />
+    <None Include="App Hub\Screen Shots\AllLocations.png" />
+    <None Include="App Hub\Screen Shots\devicestatus.png" />
+    <None Include="App Hub\Screen Shots\directions.png" />
+    <None Include="App Hub\Screen Shots\loading.png" />
+    <None Include="App Hub\Screen Shots\longpress.png" />
+    <None Include="App Hub\Screen Shots\main.png" />
+    <None Include="App Hub\Screen Shots\new.png" />
+    <None Include="App Hub\Screen Shots\ringtone.png" />
+    <None Include="App Hub\Screen Shots\settings.png" />
+    <None Include="App Hub\Screen Shots\share.png" />
+    <Content Include="Extensions\Coding4Fun.Phone.Controls.dll" />
+    <Content Include="Extensions\Coding4Fun.Phone.Controls.Toolkit.dll" />
+    <Content Include="Images\037241-black-white-pearl-icon-transport-travel-compass4.png" />
+    <Content Include="Images\037278-black-white-pearl-icon-transport-travel-transportation-car1.png" />
+    <Content Include="Images\Add.png" />
+    <Content Include="Images\At.png" />
+    <Resource Include="Images\Background.jpg" />
+    <Content Include="Images\compass.png" />
+    <Content Include="Images\Location_Dark.png" />
+    <Content Include="Images\Mode_Dark.png" />
+    <Content Include="Images\PushpinCar_Dark.png" />
+    <Content Include="Images\SendText.png" />
+    <Content Include="Images\SendMessage.png" />
+    <Content Include="Images\Cancel.png" />
+    <Content Include="Images\Check.png" />
+    <Content Include="Images\Delete.png" />
+    <Content Include="Images\Edit.png" />
+    <Content Include="Images\Addto.png" />
+    <Content Include="Images\Favorites.png" />
+    <Content Include="Images\Settings.png" />
+    <Content Include="Images\Refresh.png" />
+    <Content Include="Images\Save.png" />
+    <Content Include="Images\Email.png" />
+    <Content Include="Resource\alarm.wav" />
+    <Content Include="Resource\click.wav" />
+    <Content Include="ServiceReferences.ClientConfig" />
+    <None Include="Service References\Bing.Route\common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Route\contracts.wsdl" />
+    <None Include="Service References\Bing.Route\contracts.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Route\route.wsdl" />
+    <None Include="Service References\Bing.Route\route.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Route\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Search\Arrays.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Search\common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Search\contracts.wsdl" />
+    <None Include="Service References\Bing.Search\contracts.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Search\search.wsdl" />
+    <None Include="Service References\Bing.Search\search.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Search\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Bing.Search\UsingBingMaps.Bing.Search.SearchResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="App Hub\ringtone.png" />
+    <Content Include="Images\Directions.png" />
+    <Content Include="Images\Location.png" />
+    <Content Include="Images\Mode.png" />
+    <Content Include="Images\Route.png" />
+    <Content Include="Images\SearchBlack.png" />
+    <Content Include="Images\SearchWhite.png" />
+    <Content Include="Images\PushpinBicycle.png" />
+    <Content Include="Images\PushpinCar.png" />
+    <Content Include="Images\PushpinDrink.png" />
+    <Content Include="Images\PushpinFuel.png" />
+    <Content Include="Images\PushpinHouse.png" />
+    <Content Include="Images\PushpinLocation.png" />
+    <Content Include="Images\PushpinRestaurant.png" />
+    <Content Include="Images\PushpinShop.png" />
+    <Content Include="Images\startstop.png" />
+    <Content Include="Images\test.png" />
+    <Content Include="Images\ZoomIn_Black.png" />
+    <Content Include="Images\ZoomIn_White.png" />
+    <Content Include="Images\ZoomOut_Black.png" />
+    <Content Include="Images\ZoomOut_White.png" />
+    <None Include="Service References\Bing.Geocode\configuration91.svcinfo" />
+    <None Include="Service References\Bing.Geocode\configuration.svcinfo" />
+    <None Include="Service References\Bing.Geocode\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Bing.Geocode\" />
+    <WCFMetadataStorage Include="Service References\Bing.Route\" />
+    <WCFMetadataStorage Include="Service References\Bing.Search\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScheduledTaskAgent1\ScheduledTaskAgent1.csproj">
+      <Project>{DDC13BB6-15DF-4E35-836C-2DA6C5E28E48}</Project>
+      <Name>ScheduledTaskAgent1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App Hub\Icons\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
