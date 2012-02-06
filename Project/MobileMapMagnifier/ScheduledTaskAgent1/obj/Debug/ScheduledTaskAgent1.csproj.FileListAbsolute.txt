@@ -7,3 +7,12 @@ C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\Bin\Debug\Microsoft.Pho
 C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
 C:\Users\Chris\Desktop\map-magnifier\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb
+C:\Users\vic\CSUN-MobileMapMagnifier\Project\MobileMapMagnifier\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll
+C:\Users\vic\CSUN-MobileMapMagnifier\Project\MobileMapMagnifier\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.pdb
+C:\Users\vic\CSUN-MobileMapMagnifier\Project\MobileMapMagnifier\ScheduledTaskAgent1\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\vic\CSUN-MobileMapMagnifier\Project\MobileMapMagnifier\ScheduledTaskAgent1\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\Users\vic\CSUN-MobileMapMagnifier\Project\MobileMapMagnifier\ScheduledTaskAgent1\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\vic\CSUN-MobileMapMagnifier\Project\MobileMapMagnifier\ScheduledTaskAgent1\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\vic\CSUN-MobileMapMagnifier\Project\MobileMapMagnifier\ScheduledTaskAgent1\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\vic\CSUN-MobileMapMagnifier\Project\MobileMapMagnifier\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
+C:\Users\vic\CSUN-MobileMapMagnifier\Project\MobileMapMagnifier\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb

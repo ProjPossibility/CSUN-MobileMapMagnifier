@@ -1,0 +1,155 @@
+﻿<UserControl 
+    x:Class="GPS.Controls.TextArea"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+
+        <Grid 
+            x:Name="mainArea"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Top"
+            Visibility="{Binding OcrConversionStateManager.OcrConversionState, Converter={StaticResource StringMatchToVisibleConverter}, ConverterParameter=ConversionOK}">
+
+            <Grid 
+                x:Name="textSimpleModeWrapper" 
+                Visibility="{Binding TextViewMode, Converter={StaticResource StringMatchToVisibleConverter}, ConverterParameter=Simple}" >
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="0" >
+                    <ItemsControl x:Name="listOcrBlocksSimpleMode" ItemsSource="{Binding OcrData.OcrResultList}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="5,5,5,0" >
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Orientation:" />
+                                        <TextBlock x:Name="txtOrientation" Text="{Binding Orientation}" Margin="10,0,0,0"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Skew:" />
+                                        <TextBlock x:Name="txtSkew" Text="{Binding Skew}" Margin="10,0,0,0"/>
+                                    </StackPanel>
+                                    <Border Background="#404040" Margin="0,3,0,0">
+                                        <TextBlock x:Name="txtText" TextWrapping="Wrap" Text="{Binding Text}" Margin="10,0,10,0" />
+                                    </Border>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+
+            <Grid 
+                x:Name="textDetailedModeWrapper"
+                Visibility="{Binding TextViewMode, Converter={StaticResource StringMatchToVisibleConverter}, ConverterParameter=Detailed}" >
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="0" >
+                    <ItemsControl x:Name="listOcrBlocksDetailedMode" ItemsSource="{Binding OcrData.OcrResultList}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Margin="0,5,0,0">
+                                    <StackPanel Margin="5,0,5,0" >
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="Orientation:" />
+                                            <TextBlock x:Name="txtOrientation2" Text="{Binding Orientation}" Margin="10,0,0,0"/>
+                                        </StackPanel>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="Skew:" />
+                                            <TextBlock x:Name="txtSkew2"  Text="{Binding Skew}" Margin="10,0,0,0"/>
+                                        </StackPanel>
+                                        <ItemsControl x:Name="listWords" ItemsSource="{Binding Words}">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Border Background="#404040" Margin="0,2,0,0">
+                                                        <StackPanel Margin="10,0,10,0">
+                                                            <TextBlock x:Name="txtWord" Text="{Binding Text}" />
+                                                            <StackPanel Margin="25,0,0,0">
+                                                                <StackPanel Orientation="Horizontal">
+                                                                    <TextBlock Text="Confidence:" />
+                                                                    <TextBlock x:Name="txtConfidence" Text="{Binding Confidence}" Margin="10,0,0,0"/>
+                                                                </StackPanel>
+                                                                <StackPanel Orientation="Horizontal">
+                                                                    <TextBlock Text="Box:" />
+                                                                    <TextBlock x:Name="txtBox" Text="{Binding Box}" Margin="10,0,0,0"/>
+                                                                </StackPanel>
+                                                            </StackPanel>
+                                                        </StackPanel>
+                                                    </Border>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+
+        </Grid>
+
+        <StackPanel 
+            x:Name="convertingMessageWrapper"
+            Visibility="{Binding OcrConversionStateManager.OcrConversionState, Converter={StaticResource StringMatchToVisibleConverter}, ConverterParameter=Converting}" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center">
+            
+            <TextBlock 
+                x:Name="txtConvertingMessage" 
+                Text="Converting... Please Wait" 
+                FontSize="30" />
+            
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Text="Photo Size:" 
+                    FontSize="30" />
+                <TextBlock 
+                    x:Name="txtPhotoSize" 
+                    Text="{Binding OcrData.PhotoStreamSize, Converter={StaticResource BytesToKBytesConverter}}" 
+                    FontSize="30" 
+                    Margin="10,0,0,0"/>
+                <TextBlock 
+                    Text="K" 
+                    FontSize="30" />
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel 
+            x:Name="conversionErrorMessageWrapper"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Visibility="{Binding OcrConversionStateManager.OcrConversionState, Converter={StaticResource StringMatchToVisibleConverter}, ConverterParameter=ConversionError}" >
+            <TextBlock 
+                x:Name="txtConversionErrorMessageHeader"
+                Text="[The OCR conversion failed]" 
+                HorizontalAlignment="Center"
+                Foreground="Red" 
+                FontSize="32" />
+
+            <TextBlock 
+                x:Name="txtConversionErrorMessageArea"
+                Text="{Binding OcrConversionStateManager.OcrConversionErrorMessage}" 
+                Margin="0,20,0,0"
+                TextWrapping="Wrap"
+                Foreground="Red" 
+                HorizontalAlignment="Center"
+                FontSize="26" />
+
+        </StackPanel>
+        <TextBlock 
+            x:Name="txtNoTextMessageArea"
+            Text="[No text was found]" 
+            Foreground="Yellow" 
+            FontSize="30"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Visibility="{Binding OcrConversionStateManager.OcrConversionState, Converter={StaticResource StringMatchToVisibleConverter}, ConverterParameter=ConversionEmpty}" />
+
+    </Grid>
+
+</UserControl>

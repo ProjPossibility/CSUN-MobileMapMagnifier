@@ -1,0 +1,143 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="GPS.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    toolkit:TiltEffect.IsTiltEnabled="True">
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+    
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Map Magnifier" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="settings" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <!--<Button Content="Buy GPS Suite to remove ads" Height="71" Name="btnBuyApp" Width="437" Click="btnBuyApp_Click" />-->
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer Height="Auto" Name="MainScrollViewer" Width="Auto" >
+                <StackPanel>
+
+                    <StackPanel  Orientation="Vertical" Name="PeriodicStackPanel" Margin="0,0,0,40" Visibility="Collapsed">
+
+                        <TextBlock Text="Periodic Agent" Style="{StaticResource PhoneTextTitle2Style}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="name: " Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding Name}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="is enabled" VerticalAlignment="Center"  Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <CheckBox Name="PeriodicCheckBox" IsChecked="{Binding IsEnabled}" Checked="PeriodicCheckBox_Checked" Unchecked="PeriodicCheckBox_Unchecked"/>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="is scheduled: "  Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding IsScheduled}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="last scheduled time: "  Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding LastScheduledTime}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="expiration time: " Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding ExpirationTime}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="last exit reason: "  Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding LastExitReason}" />
+                        </StackPanel>
+                    </StackPanel>
+
+            
+
+                    <toolkit:ToggleSwitch Header="Background Service" Height="Auto" Name="Background_Service" IsChecked="{Binding IsEnabled}" Checked="PeriodicCheckBox_Checked" Unchecked="PeriodicCheckBox_Unchecked" Visibility="Collapsed" />
+                    <toolkit:ToggleSwitch Header="Track Current Position" Height="Auto" Name="TrackPositionCheckBox" IsChecked="True" Checked="TrackPositionCheckBox_Checked" Unchecked="TrackPositionCheckBox_Unchecked" />
+                    <toolkit:ToggleSwitch Header="Display Radius of Ringtones" Height="Auto" Name="RadiusDisplayCheckBox" IsChecked="False" Checked="RadiusDisplayCheckBox_Checked" Unchecked="RadiusDisplayCheckBox_Unchecked" Visibility="Collapsed" />
+                    <toolkit:ToggleSwitch Header="Aerial View" Name="AerialViewToggle" IsChecked="False" Checked="AerialViewToggle_Checked" Unchecked="AerialViewToggle_Unchecked"/>
+                    
+                    <StackPanel  Orientation="Vertical" Name="ResourceIntensiveStackPanel" Margin="0,0,0,40" Visibility="Collapsed">
+                        <TextBlock Text="Resource-intensive Agent" Style="{StaticResource PhoneTextTitle2Style}"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="name: " Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding Name}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="is enabled" VerticalAlignment="Center"  Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <CheckBox Name="ResourceIntensiveCheckBox" IsChecked="{Binding IsEnabled}" Checked="ResourceIntensiveCheckBox_Checked" Unchecked="ResourceIntensiveCheckBox_Unchecked"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="is scheduled: "  Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding IsScheduled}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="last scheduled time: "  Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding LastScheduledTime}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="expiration time: " Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding ExpirationTime}" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="last exit reason: "  Style="{StaticResource PhoneTextAccentStyle}"/>
+                            <TextBlock Text="{Binding LastExitReason}" />
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+
+            </ScrollViewer>
+
+        </Grid>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,28 @@
+﻿<UserControl 
+    x:Class="GPS.Controls.PhotoSelector"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:localConverters="clr-namespace:GPS.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="520" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+
+        <StackPanel Grid.Row="0" VerticalAlignment="Center">
+
+            <Button x:Name="btnTakePicture" Style="{StaticResource FunctionTileStyle}" Click="TakePicture_Click">
+                <Image Source="/GPS;component/Images/TakePhoto.png" Stretch="None" DoubleTap="Image_Hold" />
+            </Button>
+            <Button x:Name="btnOpenPicture" Style="{StaticResource FunctionTileStyle}" Click="OpenPicture_Click" Margin="0,50,0,0">
+                <Image Source="/GPS;component/Images/OpenImage.png" Stretch="None" DoubleTap="Image_Hold_1" />
+            </Button>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

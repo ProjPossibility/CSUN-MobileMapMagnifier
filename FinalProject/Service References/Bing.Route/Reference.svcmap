@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="177d3671-a3bd-45fc-8329-61aafa600035" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dev.virtualearth.net/webservices/v1/routeservice/routeservice.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="route.wsdl" MetadataType="Wsdl" ID="ddda9f4c-fc20-47b7-a82d-1dfa1f96bef3" SourceId="1" SourceUrl="http://dev.virtualearth.net/webservices/v1/routeservice/routeservice.svc/mex" />
+    <MetadataFile FileName="contracts.wsdl" MetadataType="Wsdl" ID="99c64fee-7168-478c-82bf-187c44d5713f" SourceId="1" SourceUrl="http://dev.virtualearth.net/webservices/v1/routeservice/routeservice.svc/mex" />
+    <MetadataFile FileName="route.xsd" MetadataType="Schema" ID="a1cfd60f-db50-429e-83b1-e5983e9cea51" SourceId="1" SourceUrl="http://dev.virtualearth.net/webservices/v1/routeservice/routeservice.svc/mex" />
+    <MetadataFile FileName="common.xsd" MetadataType="Schema" ID="e76998a5-2c1c-43af-99ac-e4b186787ccd" SourceId="1" SourceUrl="http://dev.virtualearth.net/webservices/v1/routeservice/routeservice.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="48ce8fbd-25fe-42f7-b751-867d2853fb0b" SourceId="1" SourceUrl="http://dev.virtualearth.net/webservices/v1/routeservice/routeservice.svc/mex" />
+    <MetadataFile FileName="contracts.xsd" MetadataType="Schema" ID="93b848e3-da94-4b3e-a09a-0a589d5158f4" SourceId="1" SourceUrl="http://dev.virtualearth.net/webservices/v1/routeservice/routeservice.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
